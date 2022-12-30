@@ -19,7 +19,7 @@ class Linker {
   // Yes, single file
   std::vector<char> fbuf;
   std::string filename;
-  std::unique_ptr<ELF> CurELF;
+  std::unique_ptr<ELF::ELF> CurELF;
   std::unique_ptr<Parser> CurParser;
 };
 

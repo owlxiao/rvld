@@ -4,7 +4,7 @@
 namespace Linker {
 
 Linker::Linker(const std::string &filename) {
-  this->CurELF = std::make_unique<ELF>();
+  this->CurELF = std::make_unique<ELF::ELF>();
   this->CurParser = std::make_unique<Parser>(CurELF.get(), &fbuf);
   this->filename = filename;
 
